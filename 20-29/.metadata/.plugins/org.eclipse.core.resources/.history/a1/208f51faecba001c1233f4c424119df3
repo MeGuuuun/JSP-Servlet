@@ -1,0 +1,17 @@
+package com.terry.web;
+
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
+import java.io.*;
+
+@WebServlet("/hi")
+public class Test extends HttpServlet {
+	
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException
+	{
+		PrintWriter out = resp.getWriter();
+		out.println("sdjsfwkfwjk");
+	}
+
+}
